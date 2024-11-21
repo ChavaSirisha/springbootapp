@@ -14,9 +14,11 @@ spec:
       labels:
         app: springboot-app
     spec:
+      imagePullSecrets:
+      - name: acr-secret-key
       containers:
       - name: my-springboot-app
-        image: 656952365822.dkr.ecr.us-east-1.amazonaws.com/ncplrepo:latest
+        image: myspringbootregistry.azurecr.io/myspringbootregistry:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
