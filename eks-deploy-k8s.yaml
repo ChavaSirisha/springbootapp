@@ -18,7 +18,7 @@ spec:
       - name: acr-secret-key
       containers:
       - name: my-springboot-app
-        image: myspringbootregistry.azurecr.io/myspringbootregistry:latest
+        image: springbootregistrysample.azurecr.io/springbootregistrysample:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
